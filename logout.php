@@ -1,0 +1,9 @@
+<?php
+session_start();
+include('include/db_connect.php');
+if(isset($_SESSION['user']))
+{
+session_unset();
+header("location:index.php");	
+}
+?>
